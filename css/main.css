@@ -25,23 +25,62 @@ body {
 	font-size: 1em;
 }
 
-h1 {
+h1,h2 {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.slogan{
+h2{
+	color: #8E8E8E;
+	margin: 0.5em 0 1em 1em;
+}
+
+.slogan, #steps{
 	color: #fff;
-	margin-top: 6em;
-	text-transform: uppercase;
-	margin-left: 5.5em;
+	margin-left: 10%;
 	float: right;
-	padding: 0.5em 2em 0.5em 1em ;
 	background: #2BB4E8;
-	width:17em;
-	text-align: center;
+	
+}
+
+.slogan, .stepsTitle {
+	text-transform: uppercase;
+	padding: 0.5em 2em 0.5em 1em;
+}
+.slogan {
+	margin-top: 14%;
+	width:45%;
 	font-size: 2em;
+	text-align: center;
 	border-radius: 0.2em;
 }
+
+#steps{
+	margin-top: 1%;
+	margin-bottom: 2%;
+	width:52%;
+	border-radius: 0.5em;
+}
+.stepsTitle {
+		font-size: 1.2em;
+
+}
+
+.stepsImages{
+	list-style-type: none;
+	padding: 3em 2em 3em 1em ;
+
+}
+
+.stepsImages li{
+	width:30%;
+	display: inline-block;
+	margin-left: 1em;
+}
+
+.stepsImages figcaption{
+	margin-top: 1%;
+}
+
 
 /* ------------------------------------------
   FIXED HEADER
@@ -59,8 +98,9 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
   font-weight: bold;
-  line-height: 55px;
+  line-height: 3.4em;
   float: left;
+  margin-left: 0.5em;
 }
 
 
@@ -285,7 +325,7 @@ nav{
 }
 
 .menu-item a{
-	color: #B2B2B2;
+	color: #8E8E8E;
 }
 
 .button{
@@ -296,7 +336,7 @@ nav{
 
 }
 .button a:hover{
-	background: #14718E;
+	background: #8E8E8E;
 	border-radius: 0.5em;
 }
 
@@ -319,4 +359,118 @@ nav{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+/*** SECTIONS ***/
+#intro{
+	z-index: 999;
+}
+#areas, #professionals, #whyUs{
+	background: #fff;
+	width: 100%;
+	float: left;
+}
+
+#areas{
+	margin-top: 2%;
+	padding-bottom: 2%;
+}
+
+#areas ul, #professionals ul{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#areas li, #professionalsImages li, #whyUs li{
+	width: 20%;
+	display: inline-block;
+}
+
+#areas a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.orangeSquare, .blueSquare, .yellowSquare, .greenSquare{
+	border-radius: 0.5em;
+	width: 10em;
+	height: 10em;
+	margin: 1% 0 0 1%;
+	padding: 2em 1em 0 1em;
+}
+
+.orangeSquare{
+	background: #F26632;
+}
+
+.blueSquare{
+	background: #2BB4E8;
+}
+
+.yellowSquare{
+	background: #FDB816;
+}
+
+.greenSquare{
+ 	background: #8DC642;
+}
+
+#professionals a {
+	text-decoration: none;
+	text-align: center;
+ 	text-transform: uppercase;
+ 	color: #8E8E8E;
+}
+
+#whyUs ul{
+	margin-left: 15%;
+	list-style-type: none;
+}
+#whyUs a{
+ 	color: #8E8E8E;
+ 	text-decoration: none;
+}
+
+#whyUs h4{
+	text-transform: uppercase;
+		padding-top:1em;
+}
+.blueLine, .greenLine, .orangeLine, .yellowLine {
+	width: 30%;
+}
+
+.blueLine{
+	border-top: 0.5em #2BB4E8 solid;
+}
+
+.greenLine{
+	border-top: 0.5em #8DC642 solid;
+}
+
+.orangeLine {
+	border-top: 0.5em #F26632 solid;
+}
+.yellowLine {
+	border-top: 0.5em #FDB816 solid;
+}
+
+
+.blueLine figure,  .yellowLine figure, .orangeLine figure, .greenLine figure {
+	text-align: center;
+}
+
+.blueLine h4{
+	color: #2BB4E8;
+}
+
+.blueLine p ,.blueLine h4{
+	text-align: left;
+}
+
+.blueLine figure{
+	text-align: center;
+}
+
+.blueLine img {
+	padding-top: 1em;
 }
