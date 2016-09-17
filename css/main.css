@@ -426,9 +426,8 @@ nav{
 	margin-left: 15%;
 	list-style-type: none;
 }
-#whyUs a{
+#whyUs{
  	color: #8E8E8E;
- 	text-decoration: none;
 }
 
 #whyUs h4{
@@ -462,15 +461,24 @@ nav{
 .blueLine h4{
 	color: #2BB4E8;
 }
+.yellowLine h4{
+	color: #FDB816;
+}
+.orangeLine h4{
+ 	color: #F26632;
+}
+.greenLine h4{
+	color: #8DC642 ;
+}
 
-.blueLine p ,.blueLine h4{
+.blueLine p ,.blueLine h4, .greenLine h4, .greenLine p, .yellowLine h4, .yellowLine p, .orangeLine h4, .orangeLine p{
 	text-align: left;
 }
 
-.blueLine figure{
+.blueLine figure, .orangeLine figure, .greenLine figure, .yellowLine figure{
 	text-align: center;
 }
 
-.blueLine img {
+.whyUsReasons img {
 	padding-top: 1em;
 }
