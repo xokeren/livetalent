@@ -376,6 +376,11 @@ nav{
 	padding-bottom: 2%;
 }
 
+#areas h2
+{
+  padding-top: 4%;
+}
+
 #areas ul, #professionals ul{
 	text-align: center;
 	vertical-align: middle;
@@ -421,6 +426,10 @@ nav{
  	text-transform: uppercase;
  	color: #8E8E8E;
 }
+
+#professionals h2, #whyUs h2, #hireTalent h2{
+  padding-top: 6%;
+} 
 
 #whyUs ul{
 	margin-left: 15%;
@@ -485,7 +494,6 @@ nav{
 
 #hireTalent h2{
 	text-align: center;
-	padding-top: 5%;
 	text-transform: uppercase;
 }
 
