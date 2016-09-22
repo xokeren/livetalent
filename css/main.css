@@ -77,6 +77,11 @@ h2{
 	margin-left: 1em;
 }
 
+.stepsImages h4{
+  margin-top: 1%;
+ /* text-align: center;*/
+}
+
 .stepsImages figcaption{
 	margin-top: 1%;
 }
@@ -388,6 +393,7 @@ nav{
 
 #areas li, #professionalsImages li, #whyUs li{
 	width: 20%;
+  height: auto;
 	display: inline-block;
 }
 
@@ -435,6 +441,7 @@ nav{
 	margin-left: 15%;
 	list-style-type: none;
 }
+
 #whyUs{
  	color: #8E8E8E;
 }
@@ -497,14 +504,24 @@ nav{
 	text-transform: uppercase;
 }
 
-.getStartedButton {
-	width: 10em;
+#hireTalent{
+  text-align: center;
+}
+
+.getStarted{
 	text-align: center;
-	padding: 1em;
-	background: #2BB4E8;
-	color: #fff;
-	border-radius: 0.5em;
-	margin-left:35%;
+}
+
+.getStartedButton{
+  width: 10em;
+/*  text-align: center;
+  margin-left:35%;*/
+/*display: inline-block;*/  
+  position: relative;
+  padding: 1em;
+  background: #2BB4E8;
+  color: #fff;
+  border-radius: 0.5em;
 }
 
 
