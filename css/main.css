@@ -443,7 +443,7 @@ nav{
 }
 
 #professionals h2, #whyUs h2, #hireTalent h2{
-  padding-top: 6%;
+  padding-top: 7%;
 } 
 
 #whyUs ul{
@@ -511,12 +511,12 @@ nav{
 #hireTalent h2{
 	text-align: center;
 	text-transform: uppercase;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 #hireTalent{
   text-align: center;
-  margin-bottom: 2em;
+  background-color: #fff;
 
 }
 
@@ -525,17 +525,27 @@ nav{
   text-decoration: none;
   padding: 1em;
   width: 10em;
-  margin-top: 3em;
 }
 
 .getStartedButton {
-  margin-top: 2em;
+  margin-top: 1em;
   z-index: 999;
-  float: left;
-  margin-left: 40%;
-  margin-bottom: 2em;
 }
 
+
+.rightButton {
+  float: left;
+  margin-left: 65%;
+}
+
+.centreButton {
+  float: left;
+  margin-left: 43%;
+}
+
+.margin5{
+    margin-bottom: 5em;
+}
 
 footer {
   background-color: #2BB4E8;
@@ -543,5 +553,32 @@ footer {
    width:100%;
    padding: 2em;
   position: relative;
-    clear:both;
+  clear:both;
+}
+
+#secondaryNav{
+  list-style-type: none;
+  line-height: 1.4em;
+   margin-left: 2em;
+}
+#secondaryNav h3 {
+  color: #fff;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+#secondaryNav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+#secondaryNav a:hover{
+  text-decoration: underline;;
+}
+
+#copyright{
+  color: #fff;
+  text-align: center;
+  margin-top: 1em;
 }
