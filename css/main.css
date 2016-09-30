@@ -9,6 +9,9 @@ summary, hgroup {
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
+ max-width: 100%;
+ max-height: 100%;
 }
 
 
@@ -329,33 +332,39 @@ nav{
 	margin-right: 2em;
 }
 
-.menu-item a{
+/*.menu-item a{
 	color: #8E8E8E;
-}
+}*/
 
 .button{
-	background: #2BB4E8;
 	margin: 1em;
-	color: #fff;
-	border-radius: 0.5em;
-
+  width: 3em;
 }
+
 .button a:hover{
-	background: #8E8E8E;
-	border-radius: 0.5em;
+	 color: #2BB4E8;
+
 }
 
 .button a{
-	color: #fff;
+  color: #8E8E8E;
 }
 
-.signUp{
+.signUp, .getStarted{
 	margin-top:1em;
+   background: #2BB4E8;
+  border-radius: 0.5em;
 }
 
-.signUp a:hover{
-	color: #2BB4E8;
+.signUp a, .getStarted {
+  color: #fff;
 
+}
+
+.signUp a:hover , .getStarted:hover{
+  background: #8E8E8E;
+  border-radius: 0.5em;
+  color: #fff;
 }
 
 #landing-img{
@@ -502,27 +511,37 @@ nav{
 #hireTalent h2{
 	text-align: center;
 	text-transform: uppercase;
+  margin-bottom: 2em;
 }
 
 #hireTalent{
   text-align: center;
+  margin-bottom: 2em;
+
 }
 
 .getStarted{
 	text-align: center;
-}
-
-.getStartedButton{
-  width: 10em;
-/*  text-align: center;
-  margin-left:35%;*/
-/*display: inline-block;*/  
-  position: relative;
+  text-decoration: none;
   padding: 1em;
-  background: #2BB4E8;
-  color: #fff;
-  border-radius: 0.5em;
+  width: 10em;
+  margin-top: 3em;
+}
+
+.getStartedButton {
+  margin-top: 2em;
+  z-index: 999;
+  float: left;
+  margin-left: 40%;
+  margin-bottom: 2em;
 }
 
 
-
+footer {
+  background-color: #2BB4E8;
+   bottom:0;
+   width:100%;
+   padding: 2em;
+  position: relative;
+    clear:both;
+}
