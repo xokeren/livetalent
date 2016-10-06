@@ -41,7 +41,7 @@ h2{
 	color: #fff;
 	margin-left: 10%;
 	float: right;
-	background: #2BB4E8;
+	background: #48AFC3;
 	
 }
 
@@ -51,7 +51,7 @@ h2{
 }
 .slogan {
 	margin-top: 14%;
-	width:45%;
+	width:53%;
 	font-size: 2em;
 	text-align: center;
 	border-radius: 0.2em;
@@ -60,7 +60,7 @@ h2{
 #steps{
 	margin-top: 1%;
 	margin-bottom: 2%;
-	width:52%;
+	width:53%;
 	border-radius: 0.5em;
 }
 .stepsTitle {
@@ -83,6 +83,8 @@ h2{
 .stepsImages h4{
   margin-top: 1%;
  /* text-align: center;*/
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 .stepsImages figcaption{
@@ -339,10 +341,11 @@ nav{
 .button{
 	margin: 1em;
   width: 3em;
+   text-transform: uppercase;
 }
 
 .button a:hover{
-	 color: #2BB4E8;
+	 color: #166877;
 
 }
 
@@ -352,7 +355,7 @@ nav{
 
 .signUp, .getStarted{
 	margin-top:1em;
-   background: #2BB4E8;
+   background: #48AFC3;
   border-radius: 0.5em;
 }
 
@@ -375,7 +378,7 @@ nav{
   background-size: cover;
 }
 
-/*** SECTIONS ***/
+
 #intro{
 	z-index: 999;
 }
@@ -411,29 +414,23 @@ nav{
 	color: #fff;
 }
 
-.orangeSquare, .blueSquare, .yellowSquare, .greenSquare{
+.ligtBlueSquare, .blueSquare{
 	border-radius: 0.5em;
 	width: 10em;
 	height: 10em;
 	margin: 1% 0 0 1%;
-	padding: 2em 1em 0 1em;
+	padding: 2em 1em 1em 1em;
 }
 
-.orangeSquare{
-	background: #F26632;
+.ligtBlueSquare{
+	background: #48AFC3;
 }
 
 .blueSquare{
-	background: #2BB4E8;
+	background: #166877;
 }
 
-.yellowSquare{
-	background: #FDB816;
-}
 
-.greenSquare{
- 	background: #8DC642;
-}
 
 #professionals a {
 	text-decoration: none;
@@ -464,18 +461,11 @@ nav{
 }
 
 .blueLine{
-	border-top: 0.5em #2BB4E8 solid;
+	border-top: 0.5em #166877 solid;
 }
 
-.greenLine{
-	border-top: 0.5em #8DC642 solid;
-}
-
-.orangeLine {
-	border-top: 0.5em #F26632 solid;
-}
-.yellowLine {
-	border-top: 0.5em #FDB816 solid;
+.lightBlueLine{
+	border-top: 0.5em #48AFC3 solid;
 }
 
 
@@ -484,16 +474,10 @@ nav{
 }
 
 .blueLine h4{
-	color: #2BB4E8;
+	color: #166877;
 }
-.yellowLine h4{
-	color: #FDB816;
-}
-.orangeLine h4{
- 	color: #F26632;
-}
-.greenLine h4{
-	color: #8DC642 ;
+.lightBlueLine h4{
+	color: #48AFC3;
 }
 
 .blueLine p ,.blueLine h4, .greenLine h4, .greenLine p, .yellowLine h4, .yellowLine p, .orangeLine h4, .orangeLine p{
@@ -548,7 +532,7 @@ nav{
 }
 
 footer {
-  background-color: #2BB4E8;
+  background-color: #166877;
    bottom:0;
    width:100%;
    padding: 2em;
@@ -582,3 +566,4 @@ footer {
   text-align: center;
   margin-top: 1em;
 }
+
