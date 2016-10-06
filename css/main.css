@@ -81,7 +81,7 @@ h2{
 }
 
 .stepsImages h4{
-  margin-top: 1%;
+  margin-top: 3%;
  /* text-align: center;*/
   text-transform: uppercase;
   font-size: 0.9em;
@@ -102,6 +102,7 @@ header {
   left: 0;
   top: 0;
   background:#fff;
+  border-bottom: .1em #B2B2B2 solid;
 }
 
 .logo {
@@ -357,6 +358,7 @@ nav{
 	margin-top:1em;
    background: #48AFC3;
   border-radius: 0.5em;
+  color: #fff;
 }
 
 .signUp a, .getStarted {
@@ -409,27 +411,21 @@ nav{
 	display: inline-block;
 }
 
-#areas a{
-	text-decoration: none;
-	color: #fff;
-}
 
-.ligtBlueSquare, .blueSquare{
+
+.blueSquare{
 	border-radius: 0.5em;
 	width: 10em;
 	height: 10em;
 	margin: 1% 0 0 1%;
 	padding: 2em 1em 1em 1em;
+  border: 0.2em #166877 solid;
 }
 
-.ligtBlueSquare{
-	background: #48AFC3;
+ .blueSquare a{
+  text-decoration: none;
+  color: #166877;
 }
-
-.blueSquare{
-	background: #166877;
-}
-
 
 
 #professionals a {
@@ -509,6 +505,7 @@ nav{
   text-decoration: none;
   padding: 1em;
   width: 10em;
+  color: #fff;
 }
 
 .getStartedButton {
@@ -535,7 +532,7 @@ footer {
   background-color: #166877;
    bottom:0;
    width:100%;
-   padding: 2em;
+   padding: 2em 2em 0.2em 2em;
   position: relative;
   clear:both;
 }
@@ -554,7 +551,7 @@ footer {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 #secondaryNav a:hover{
@@ -565,5 +562,6 @@ footer {
   color: #fff;
   text-align: center;
   margin-top: 1em;
+  font-size: 0.7em;
 }
 
