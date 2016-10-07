@@ -41,7 +41,7 @@ h2{
 	color: #fff;
 	margin-left: 10%;
 	float: right;
-	background: #48AFC3;
+	background: rgb(247,147,29);
 	
 }
 
@@ -346,7 +346,7 @@ nav{
 }
 
 .button a:hover{
-	 color: #166877;
+	 color: #F7931D;
 
 }
 
@@ -419,12 +419,12 @@ nav{
 	height: 10em;
 	margin: 1% 0 0 1%;
 	padding: 2em 1em 1em 1em;
-  border: 0.2em #166877 solid;
+  border: 0.2em #F7931D solid;
 }
 
  .blueSquare a{
   text-decoration: none;
-  color: #166877;
+  color: #F7931D;
 }
 
 
@@ -457,7 +457,7 @@ nav{
 }
 
 .blueLine{
-	border-top: 0.5em #166877 solid;
+	border-top: 0.5em #F7931D solid;
 }
 
 .lightBlueLine{
@@ -470,7 +470,7 @@ nav{
 }
 
 .blueLine h4{
-	color: #166877;
+	color: #F7931D;
 }
 .lightBlueLine h4{
 	color: #48AFC3;
