@@ -412,21 +412,89 @@ nav{
 }
 
 
-
-.blueSquare{
-	border-radius: 0.5em;
-	width: 10em;
-	height: 10em;
+.flip-box-container{
 	margin: 1% 0 0 1%;
-	padding: 2em 1em 1em 1em;
+  perspective: 900px;
+}
+
+
+.flip-box {
+  position: relative;
+  width: 100%;
+  height: 11em;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
   border: 0.2em #F7931D solid;
+  border-radius: 0.5em;
+  padding: 3em 1em 3em 1em;
+
 }
 
- .blueSquare a{
-  text-decoration: none;
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*width: 10em;
+  height: 10em;*/
+  backface-visibility: hidden;
+  padding: 0.5em 1em 0.5em 1em;
+
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '';
+  display: block;
+  clear: both;
+  text-transform: uppercase;
+  margin:0 auto;
+  color: #8E8E8E;
+}
+.front figcaption{
+  font-size: 1.1em;
+  margin-top: .5em;
+}
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   content: '';
+    display: block;
+    clear: both;
+}
+
+.back p {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+
+.learnMore{
+  margin-top:1em;
+  border-radius: 0.5em;
+  padding:0.5em 1em;
+ background: #fff;
   color: #F7931D;
+  text-align: center;
+  margin-left: 2em;
+  text-decoration: none;
+  border: 0.11em #F7931D solid;
 }
 
+.learnMore:hover {
+  color: #fff;
+  background: #F7931D;
+}
+
+.flip-box-container:hover .flip-box {
+  transform: rotateY(180deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
 
 #professionals a {
 	text-decoration: none;
