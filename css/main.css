@@ -412,36 +412,48 @@ nav{
 }
 
 
-.flip-box-container{
+.areas-flip-box-container,.professionals-flip-box-container{
 	margin: 1% 0 0 1%;
   perspective: 900px;
+ 
+}
+.areas-flip-box-container:after,.professionals-flip-box-container:after{
+ content: '';
+  display: block;
+  clear: both;
 }
 
-
-.flip-box {
+.areas-flip-box, .professionals-flip-box{
   position: relative;
-  width: 100%;
-  height: 11em;
   transition: all 0.6s ease;
   transform-style: preserve-3d;
+}
+
+.areas-flip-box {
+  height: 11em;
+  width: 100%;
   border: 0.2em #F7931D solid;
   border-radius: 0.5em;
   padding: 3em 1em 3em 1em;
-
+}
+.professionals-flip-box {
+  height:18.5em;
+  width: 80%;
 }
 
-.front, .back {
+.areas-front, .areas-back,.professionals-front, .professionals-back {
   position: absolute;
   top: 0;
   left: 0;
   /*width: 10em;
   height: 10em;*/
   backface-visibility: hidden;
-  padding: 0.5em 1em 0.5em 1em;
-
+}
+.areas-front, .areas-back{
+    padding: 0.5em 1em 0.5em 1em;
 }
 
-.front {
+.areas-front,.professionals-front {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,11 +464,11 @@ nav{
   margin:0 auto;
   color: #8E8E8E;
 }
-.front figcaption{
+.areas-front figcaption{
   font-size: 1.1em;
   margin-top: .5em;
 }
-.back {
+.areas-back, .professionals-back {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -465,13 +477,23 @@ nav{
     clear: both;
 }
 
-.back p {
+.professionals-back {
+  border: 0.1em #F7931D solid;
+  border-radius: 0.5em;
+  padding: 0.5em 1em 0.5em 1em;
+  height: 20em;
+}
+
+.areas-back p, .professionals-back p {
   width: 100%;
   text-align: left;
   margin-bottom: 1.5em;
 }
+.professionals-back p {
+  text-transform: none;
+}
 
-.learnMore{
+.areas-learnMore{
   margin-top:1em;
   border-radius: 0.5em;
   padding:0.5em 1em;
@@ -483,18 +505,28 @@ nav{
   border: 0.11em #F7931D solid;
 }
 
-.learnMore:hover {
+.areas-learnMore:hover {
   color: #fff;
   background: #F7931D;
 }
 
-.flip-box-container:hover .flip-box {
+.areas-flip-box-container:hover .areas-flip-box, .professionals-flip-box-container:hover .professionals-flip-box {
   transform: rotateY(180deg);
 }
 
-.back {
+.areas-back,.professionals-back {
   transform: rotateY(180deg);
 }
+
+.jobDes{
+  position: absolute;
+  margin-left: 3em;
+  top:20em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #8E8E8E;
+}
+
 
 #professionals a {
 	text-decoration: none;
