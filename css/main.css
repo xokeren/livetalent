@@ -687,8 +687,8 @@ POP UP
 }
 
 .popup {
-  margin: 4.375em auto;
-  padding: 1.25px;
+  margin: 4em auto;
+  padding: 1.25em;
   background: #fff;
   border-radius: 0.5em;
   width: 30%;
@@ -698,45 +698,65 @@ POP UP
 
 .popup h3 {
   margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup h2{
+  text-transform: uppercase;
+  border-bottom: #B2B2B2 0.01em solid;
 }
 .popup .close {
   position: absolute;
-  top: 0.5em;
+  top: 0.8em;
   right: 1em;
   transition: all 200ms;
   font-size: 2em;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #B2B2B2;
 }
 .popup .close:hover {
-  color: #B2B2B2;
+  color: #166877;
 }
 
 .popup .content {
-  max-height: 50%;
+  max-height: 40%;
   overflow: auto;
-  padding-bottom: 4em;
+  padding-bottom: 1em;
+  color: #555;
+}
+
+.popup .content p{
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 1.5em;
 }
 
 
 .businessButton, .freelancerButton{
-  text-align: center;
   text-decoration: none;
   padding: 0.5em;
-  width: 8em;
   color: #fff;
   border-radius: 0.5em;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 1em;
+  text-transform: uppercase;
 }
 .businessButton{
   background: #F7931D;
+}
+
+.businessButton:hover{
+  border: 0.11em #F7931D solid;
+  background: #fff;
+  color: #F7931D;
 }
 
 .freelancerButton {
   background: #48AFC3;
 }
 
+.freelancerButton:hover{
+  border: 0.11em #48AFC3 solid;
+  background: #fff;
+  color: #48AFC3;
+}
