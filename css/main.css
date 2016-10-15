@@ -342,7 +342,7 @@ nav{
 .button{
 	margin: 1em;
   width: 3em;
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .button a:hover{
@@ -363,6 +363,8 @@ nav{
 
 .signUp a, .getStarted {
   color: #fff;
+  width: 8em;
+  text-align: center;
 
 }
 
@@ -414,6 +416,7 @@ nav{
 .areas-flip-box-container,.professionals-flip-box-container{
 	margin: 1% 0 0 1%;
   perspective: 56em;
+  -webkit-perspective:56em; /* Chrome, Safari, Opera */
 }
 
 .areas-flip-box-container:after,.professionals-flip-box-container:after{
@@ -494,23 +497,43 @@ nav{
 }
 .professionals-back p {
   text-transform: none;
+  color: #555;
+}
+
+.areas-learnMore, .hireMeButton{
+  border-radius: 0.5em;
+  padding:0.5em 1em;
+  text-decoration: none;
 }
 
 .areas-learnMore{
-  margin-top:1.5em;
-  border-radius: 0.5em;
-  padding:0.5em 1em;
-  background: #fff;
-  color: #F7931D;
+  margin-top:0.3em;
   text-align: center;
-  margin-left: 2em;
-  text-decoration: none;
+/*  margin-left: 2em;
+*/  background: #fff;
+  color: #F7931D;
   border: 0.11em #F7931D solid;
+  display: inline-block;
+  width: 70%;
+  text-align: center;
 }
 
-.areas-learnMore:hover {
-  color: #fff;
+.areas-learnMore:hover{
   background: #F7931D;
+   color: #fff;
+
+}
+
+.hireMeButton{
+  position: relative;
+  top: 5em;
+  color: #48AFC3 !important;
+  border: 0.11em #48AFC3 solid;
+}
+
+.hireMeButton:hover {
+  color: #fff !important;
+  background: #48AFC3;
 }
 
 .areas-flip-box-container:hover .areas-flip-box, .professionals-flip-box-container:hover .professionals-flip-box {
@@ -756,7 +779,11 @@ POP UP
   position: relative;
   top: 1em;
   text-transform: uppercase;
+  display: inline-block;
+  width: 8em;
+  text-align: center;
 }
+
 .businessButton{
   background: #F7931D;
 }
@@ -776,3 +803,5 @@ POP UP
   background: #fff;
   color: #48AFC3;
 }
+
+
