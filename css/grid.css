@@ -1,0 +1,63 @@
+/******************************
+	GRID CSS
+*******************************/
+
+ [class^='grid-col-'] {
+  float: left;
+  padding: 0;
+}
+
+.grid-row::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-col-1of1, .grid-col-1of2, .grid-col-1of3,.grid-col-1of4 {
+   display: block;
+}
+
+.grid-col-1of1{
+  width: 100%;
+}
+
+.grid-col-1of2{
+  width: 49%;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.grid-col-2of2{
+  width: 47%;
+  margin-top: 1em;
+}
+
+.grid-col-1of3{
+  width: 32%;
+}
+
+.grid-col-2of3{
+	width:66%;
+}
+
+.grid-col-1of4{
+  width: 25%;
+  margin-left: 5em;
+}
+
+.grid-col-2of4{
+  width: 48%;
+  margin-top: 1em;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .grid-col-1of2,.grid-col-2of3, .grid-col-2of3,.grid-col-2of4,.grid-col-1of3 {
+    width: 100%;
+
+  }
+
+  .grid-col-1of4{
+    width: 45%;
+  }
+}
