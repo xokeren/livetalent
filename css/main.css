@@ -392,7 +392,6 @@ nav{
 
 #areas{
 	margin-top: 2%;
-	padding-bottom: 2%;
 }
 
 #areas h2
@@ -430,7 +429,7 @@ nav{
 }
 
 .areas-flip-box {
-  height: 11em;
+  height: 12em;
   width: 100%;
   border: 0.2em #F7931D solid;
   border-radius: 0.5em;
@@ -463,6 +462,8 @@ nav{
   text-transform: uppercase;
   margin:0 auto;
   color: #8E8E8E;
+  width: 90%;
+  padding-top: 1em;
 }
 .areas-front figcaption{
   font-size: 1.1em;
@@ -487,17 +488,17 @@ nav{
 .areas-back p, .professionals-back p {
   width: 100%;
   text-align: left;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 .professionals-back p {
   text-transform: none;
 }
 
 .areas-learnMore{
-  margin-top:1em;
+  margin-top:1.5em;
   border-radius: 0.5em;
   padding:0.5em 1em;
- background: #fff;
+  background: #fff;
   color: #F7931D;
   text-align: center;
   margin-left: 2em;
@@ -548,9 +549,13 @@ nav{
  	color: #8E8E8E;
 }
 
-#professionals h2, #whyUs h2, #hireTalent h2{
-  padding-top: 7%;
+#professionals h2, #hireTalent h2{
+  padding-top: 5%;
 } 
+
+#whyUs h2 {
+  padding-top:7%;
+}
 
 #whyUs ul{
 	margin-left: 15%;
