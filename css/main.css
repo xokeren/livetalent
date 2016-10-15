@@ -518,14 +518,27 @@ nav{
   transform: rotateY(180deg);
 }
 
-.jobDes{
+.jobDes,.ratings{
   position: absolute;
-  margin-left: 3em;
-  top:20em;
   text-transform: uppercase;
   text-align: center;
-  color: #8E8E8E;
+  top:20em;
+  margin:0 auto;
+
 }
+
+.jobDes{
+    color: #8E8E8E; 
+    width: 80%;
+}
+
+.ratings{
+  margin-top: 1.5em;
+  width: 40%;
+  margin-left: 3em;
+}
+
+
 
 
 #professionals a {
