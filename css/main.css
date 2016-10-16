@@ -307,7 +307,7 @@ header {
   position: relative;
   overflow: hidden;
   width: 60px;
-  height: 55px;
+  /*height: 55px;*/
   float: right;
 }
 
@@ -331,7 +331,7 @@ header {
 }
 
 nav{
-	margin-top:2em;
+	margin-top:-2.5em;
 	margin-right: 2em;
 }
 
@@ -805,3 +805,36 @@ POP UP
 }
 
 
+/**************
+SEARCH BAR
+**************/
+
+
+input[type=text] {
+    width: 8em;
+    box-sizing: border-box;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+/*    font-size: 16px;
+*/    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 0.7em 1.2em 0.7em 2.5em;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left: 2em;
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+input[type=text]:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+input[type=text]:focus {
+    width: 20%;
+}
