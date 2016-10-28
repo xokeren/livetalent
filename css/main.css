@@ -22,7 +22,10 @@ summary, hgroup {
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
-
+img {
+  max-width: 100%;
+/*  width: 100%;*/
+}
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em;
@@ -437,17 +440,24 @@ nav{
   border: 0.2em #F7931D solid;
   border-radius: 0.5em;
   padding: 3em 1em 3em 1em;
+  display: flex;
 }
 .professionals-flip-box {
   height:18.5em;
   width: 80%;
 }
 
+.areas-front{
+  margin-left: auto;
+    margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
 
 .areas-front, .areas-back,.professionals-front, .professionals-back {
   position: absolute;
   top: 0;
-  left: 0;
+ /* left: 0;*/
   /*width: 10em;
   height: 10em;*/
   backface-visibility: hidden;
