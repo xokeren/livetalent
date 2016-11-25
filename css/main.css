@@ -76,9 +76,11 @@ h2{
 	width:53%;
 	border-radius: 0.5em;
 }
+
 .stepsTitle {
 		font-size: 1.2em;
-
+    border-bottom: 0.01em dotted #fff;
+    width: 15em;
 }
 
 .stepsImages{
@@ -240,6 +242,7 @@ nav a#pull {
 	width: 100%;
 	float: left;
 }
+
 
 
 #areas h2
@@ -433,9 +436,25 @@ nav a#pull {
  	color: #8E8E8E;
 }
 
-#professionals h2, #hireTalent h2{
+#professionals h2{
   padding-top: 5%;
 } 
+
+#hireTalent {
+    border-bottom:  0.01em dotted #48AFC3;
+    padding-bottom: 3em;
+    width: 100%
+}
+#hireTalent h2{
+    margin: 3% auto;
+    width: 35em;
+    padding: 1em;
+    border-bottom: none;
+    border-top: 0.01em dotted #48AFC3;
+    font-size: 1.8em;
+    font-weight: bolder;
+
+}
 #professionalsImages{
   margin-left: 15%;
   width: 100%;
@@ -467,14 +486,14 @@ nav a#pull {
 }
 
 
-.blueLine figure,  .yellowLine figure, .orangeLine figure, .greenLine figure {
+.blueLine figure,  .orangeLine figure {
 	text-align: center;
 }
 
 .blueLine h4{
 	color: #F7931D;
 }
-.lightBlueLine h4{
+.orangeLine h4{
 	color: #48AFC3;
 }
 
@@ -499,6 +518,7 @@ nav a#pull {
 	text-align: center;
 	text-transform: uppercase;
   margin-bottom: 1em;
+  color: #166877;
 }
 
 #hireTalent{
@@ -531,9 +551,6 @@ nav a#pull {
   margin-left: 43%;
 }
 
-.margin5{
-    margin-bottom: 5em;
-}
 
 footer {
   background-color: #166877;
@@ -795,7 +812,10 @@ MOBILE
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 
-
+h2{
+  width: 10em;
+  text-align: center;
+}
 #intro{
   margin-top: 60%;
 }
@@ -823,7 +843,7 @@ MOBILE
   width: 80%;
 }
 
-.blueLine, .lightBlueLine{
+.blueLine, .orangeLine{
   margin-top: 4%;
   width: 60%;
 }
