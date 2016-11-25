@@ -551,9 +551,13 @@ nav a#pull {
 
 
 .blueLine figure,  .orangeLine figure {
-	text-align: center;
+	/*text-align: center;*/
 }
-
+.blueLine figcaption,  .orangeLine figcaption{
+  width: 70%;
+  margin-top: 0.5em;
+  margin-left: 25%;
+}
 .blueLine h4{
 	color: #F7931D;
 }
