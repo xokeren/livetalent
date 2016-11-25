@@ -43,6 +43,10 @@ h1,h2 {
 h2{
 	color: #8E8E8E;
 	margin: 0.5em 0 1em 1em;
+  font-weight: lighter;
+  border-bottom: 0.01em dotted #48AFC3;
+  width: 20em;
+  text-transform: uppercase;
 }
 
 
@@ -791,6 +795,7 @@ MOBILE
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 
+
 #intro{
   margin-top: 60%;
 }
@@ -834,6 +839,7 @@ MOBILE
 
 .whyUsReasons{
   width: 80%;
+  margin-left: 5%;
 }
  nav ul {
     display: none;
