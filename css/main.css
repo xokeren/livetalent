@@ -244,18 +244,20 @@ nav a#pull {
 .hireMeButton2{
   position: relative;
   top: 2em;
-  background-color: #F7931D;
-  color: white;
+  background-color: #fff;
+  color: #F7931D;
   text-transform: uppercase;
    border-radius: 0.5em;
   padding:0.5em 3em;
   text-decoration: none;
+  font-weight: bolder;
+  border: 0.11em #F7931D solid;
 }
 
 .hireMeButton2:hover {
-  color: #F7931D !important;
-  border: 0.11em #F7931D solid;
-  background-color: #fff;
+  color: #fff !important;
+  border: 0.11em #fff solid;
+  background: #166877;
 }
 
 
@@ -761,7 +763,7 @@ margin-left: 2%;
 }
 
 #profileMainArea section{
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -773,26 +775,49 @@ margin-left: 2%;
 .sectionTitle{
   color: #48AFC3;
   text-transform: uppercase;
-  border-bottom: #B2B2B2 0.1em solid;
+  border-bottom: #B2B2B2 0.1em dotted;
+}
+
+.nameHeader{
+   background-color: #48AFC3;
+  color: #fff;
+  width: 100%;
+  height: 7em;
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
 .personName{
   font-size: 3em;
-  color: #48AFC3;
-  margin-left: 2%;
   text-transform: uppercase;
 }
+
 #profile-sidebar{
    box-sizing: border-box;
-    padding-left: 20px;
+    padding-left: 1em;
     z-index: 999;
     position: fixed;
     text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #profile-sidebar li{
   list-style-type: none;
+  margin-top: 0.5em; 
 }
+
+
+
+#profile-sidebar a {
+  text-decoration: none;
+  color: #48AFC3;
+}
+
+#profile-sidebar a:hover {
+  color: #F7931D;
+}
+
 #serExpInd h3{
   font-size: 1.1em;
   color: #B2B2B2;
@@ -813,6 +838,12 @@ margin-left: 2%;
 #experience li{
   list-style-type: none;
   margin-top: 1%;
+}
+
+#freelancerLocation figcaption{
+  display: inline-block;
+  font-size: .7em;
+  font-weight: lighter;
 }
 
 .icons{

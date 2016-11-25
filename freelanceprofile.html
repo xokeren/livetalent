@@ -23,16 +23,18 @@
 
 	<body id="profile-img">
 	<div class="page-wrap">
-		 <header>
+		<header>
 		     <a href="#" class="logo" data-scroll><img src="img/logo.png" alt="Livetalent Logo"></a>
-		    <form><input type="text" name="search" placeholder="Search.."></form> 
-		     <nav class="nav-collapse">
-		        <ul>
-		          	<li class="menu-item button"><a href="#" data-scroll>Log In</a></li>
-		          	<li class="menu-item button signUp"><a href="#popup-container" data-scroll>Sign Up</a></li>
+		     <nav class="clearfix">
+		        <ul class="clearfix">
+		        	<li><form><input type="search" placeholder="Search"></form></li>
+		          	<li class="button"><a href="#" data-scroll>Log In</a></li>
+		          	<li class="signUp"><a href="#popup-container" data-scroll>Sign Up</a></li>
 		        </ul>
+		        <a href="#" id="pull">Menu</a>
 	      	</nav>
-    </header>
+    	</header>
+
 
     <section id="popup-container" class="overlay">
     	<div class="popup">
@@ -66,9 +68,14 @@
 		</ul>
 		</div>
     <div class="grid-col-1of2">
-    	<div class="grid-row">
+    	<div class="grid-row nameHeader">
     	<div class="grid-col-2of3">
     		<h1 class="personName"> Ev Demin</h1>
+    		<div id="freelancerLocation">
+	    		<figure><img src="img/locationIcon-01.png">
+	    		<figcaption>Vanouver,BC</figcaption>
+	    		</figure>
+    		</div>
     	</div>
     	<div class="grid-col-1of4"><a href="#" class="hireMeButton2"> Hire Me </a></div>
 
@@ -79,33 +86,36 @@
 
 		​​<p>Let me provide your website and media pages with images that showcase your business and also to run your social media accounts for you! </p>
     	</section>
-    	<section id="serExpInd" name="serExpInd"><h1 class="sectionTitle">Services/Expertise/Industries</h1>
-    	<div class="grid">
-    		<div class="grid-col-1of3">
-    		<h3>Services </h3>
-    		<ul>
-	    		<li>Social media management</li>
-	    		<li>Product photography, images for media</li>
-    		</ul>
-    		</div>
-    		<div class="grid-col-1of3">
-    		<h3>Expertise </h3>
-    		<ul>
-	    		<li>All range of photography</li>
-	    		<li>Social media management</li>
-    		</ul>
-    		</div>
-    		<div class="grid-col-1of3">
-    		<h3>Industries </h3>
-    		<ul>
-	    		<li>Professional, scientific and technical services</li>
-	    		<li>Management of companies and enterprises</li>
-	    		<li>Arts, entertainment and recreation</li>
-    		</ul>
-    		</div>
-    	</div>
+    	<section id="serExpInd" name="serExpInd">
+
+	    	<h1 class="sectionTitle">Services/Expertise/Industries</h1>
+	    	<div class="grid">
+	    		<div class="grid-col-1of3">
+	    		<h3>Services </h3>
+	    		<ul>
+		    		<li>Social media management</li>
+		    		<li>Product photography, images for media</li>
+	    		</ul>
+	    		</div>
+	    		<div class="grid-col-1of3">
+	    		<h3>Expertise </h3>
+	    		<ul>
+		    		<li>All range of photography</li>
+		    		<li>Social media management</li>
+	    		</ul>
+	    		</div>
+	    		<div class="grid-col-1of3">
+	    		<h3>Industries </h3>
+	    		<ul>
+		    		<li>Professional, scientific and technical services</li>
+		    		<li>Management of companies and enterprises</li>
+		    		<li>Arts, entertainment and recreation</li>
+	    		</ul>
+	    		</div>
+	    	</div>
     	</section>
-    	<section id="education" name="education"><h1 class="sectionTitle">Education &#38; Qualification</h1>
+    	<section id="education" name="education">
+    		<h1 class="sectionTitle">Education &#38; Qualification</h1>
     	<p>Bachelor, Metallurgy Siberian Federal Industrial University,1994</p>
 		<p>Diploma, Management, Moscow Academy of Economics, 2003</p>
     	</section>
@@ -121,20 +131,35 @@
 	    	</ul>
     	</section>
 
+    	<section id="freelancerVideo" name="freelancerVideo">
+			    <h1 class="sectionTitle">&#40; Video will go here&#41;</h1>
+				<img src="http://placehold.it/560x315">
+		</section>
+
+		<section id="commentsSection" name="commentsSection">
+			    <h1 class="sectionTitle">Reviews/Comments</h1>
+		</section>
+
 
     </div>
 	    <div class="grid-col-1of4">
 		    <div id="profile-sidebar">
 		    	<ul>
 			    	<li class="current"><a href="#overview">Overview</a></li>
-			    	<li>Services/Expertise/Industries</li>
-			    	<li>Education &#38; Qualification</li>
-			    	<li>Awards &#38; recognitions </li>
-			    	<li>Experience</li>
+			    	<li><a href="#serExpInd">Services/Expertise/Industries</a></li>
+			    	<li><a href="#education">Education &#38; Qualification</a></li>
+			    	<li><a href="#awards">Awards &#38; recognitions</a></li>
+			    	<li><a href="#experience">Experience</a></li>
+			    	<li><a href="#freelancerVideo">Freelancer video</a></li>
+			    	<li><a href="#commentsSection">Reviews/Comments</a></li>
 		    	</ul>
 		    </div>
 	    </div>
+
+
+
 	</section>
+
 
 	<footer>
 		<ul id="secondaryNav">
