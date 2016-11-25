@@ -1,4 +1,8 @@
 /** MAIN CSS FOR LIVETALENT.CA **/
+
+/* ------------------------------------------
+ GENERAL STYLING
+--------------------------------------------- */
   * {
     margin: 0;
 }
@@ -49,7 +53,9 @@ h2{
   text-transform: uppercase;
 }
 
-
+/* ------------------------------------------
+ INTRO STYLING
+--------------------------------------------- */
 .slogan, #steps{
 	color: #fff;
 	margin-left: 10%;
@@ -185,6 +191,9 @@ nav a#pull {
   display: none;
 }
 
+/* ------------------------------------------
+  BUTTONS STYLING
+--------------------------------------------- */
 .button{
 	margin: 1em;
   width: 3em;
@@ -220,6 +229,87 @@ nav a#pull {
   border-radius: 0.5em;
   color: #fff;
 }
+.hireMeButton{
+  position: relative;
+  top: 5em;
+  color: #48AFC3 !important;
+  border: 0.11em #48AFC3 solid;
+}
+
+.hireMeButton:hover {
+  color: #fff !important;
+  background-color: #48AFC3;
+}
+
+.hireMeButton2{
+  position: relative;
+  top: 2em;
+  background-color: #F7931D;
+  color: white;
+  text-transform: uppercase;
+   border-radius: 0.5em;
+  padding:0.5em 3em;
+  text-decoration: none;
+}
+
+.hireMeButton2:hover {
+  color: #F7931D !important;
+  border: 0.11em #F7931D solid;
+  background-color: #fff;
+}
+
+
+.areas-learnMore, .hireMeButton{
+  border-radius: 0.5em;
+  padding:0.5em 1em;
+  text-decoration: none;
+}
+
+.areas-learnMore{
+  margin-top:0.3em;
+  text-align: center;
+/*  margin-left: 2em;
+*/  background-color: #fff;
+  color: #F7931D;
+  border: 0.11em #F7931D solid;
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+}
+
+.areas-learnMore:hover{
+  background-color: #F7931D;
+   color: #fff;
+
+}
+
+.getStarted{
+  text-align: center;
+  text-decoration: none;
+  padding: 1em;
+  width: 10em;
+  color: #fff;
+}
+
+.getStartedButton {
+  margin-top: 1em;
+  z-index: 999;
+}
+
+
+.rightButton {
+  float: left;
+  margin-left: 65%;
+}
+
+.centreButton {
+  float: left;
+  margin-left: 43%;
+}
+
+/* ------------------------------------------
+  BACKGROUND IMAGES
+--------------------------------------------- */
 
 #profile-img{
 	background: url("../img/background-profile.png") no-repeat left fixed; 
@@ -233,6 +323,9 @@ nav a#pull {
   background-size: cover;
 }
 
+/* ------------------------------------------
+  SECTIONS STYLING
+--------------------------------------------- */
 
 #intro{
 	z-index: 999;
@@ -243,14 +336,93 @@ nav a#pull {
 	float: left;
 }
 
-
-
 #areas h2
 {
   padding-top: 4%;
 }
 
+.jobDes{
+    color: #8E8E8E; 
+    width: 80%;
+    margin:0 auto;
+}
 
+.ratings{
+/*  margin-top: 1.5em;*/
+  width: 45%;
+  margin-left: 12%;
+ /* margin:0 auto;*/
+}
+
+#professionals a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8E8E8E;
+}
+
+#professionals h2{
+  padding-top: 5%;
+} 
+
+#hireTalent {
+    border-bottom:  0.01em dotted #48AFC3;
+    padding-bottom: 3em;
+    width: 100%
+}
+#hireTalent h2{
+    margin: 3% auto;
+    width: 35em;
+    padding: 1em;
+    border-bottom: none;
+    border-top: 0.01em dotted #48AFC3;
+    font-size: 1.8em;
+    font-weight: bolder;
+
+}
+
+#professionalsImages{
+  margin-left: 15%;
+  width: 100%;
+}
+#whyUs h2 {
+  padding-top:7%;
+}
+
+#whyUs{
+  color: #8E8E8E;
+}
+
+#whyUs h4{
+  text-transform: uppercase;
+    padding-top:1em;
+}
+
+.whyUsReasons {
+  width: 90%;
+  margin-left: 15%;
+}
+
+.whyUsReasons img {
+  padding-top: 1em;
+}
+
+#hireTalent h2{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: #166877;
+}
+
+#hireTalent{
+  text-align: center;
+  background-color-color: #fff;
+
+}
+
+/* ------------------------------------------
+ TALENT AREA  AND PROFESSIONAL AREA FLIP BOX
+--------------------------------------------- */
 .areas-flip-box-container,.professionals-flip-box-container{
 	margin: 1% 0 0 1%;
   perspective: 56em;
@@ -346,63 +518,6 @@ nav a#pull {
   color: #555;
 }
 
-.areas-learnMore, .hireMeButton{
-  border-radius: 0.5em;
-  padding:0.5em 1em;
-  text-decoration: none;
-}
-
-.areas-learnMore{
-  margin-top:0.3em;
-  text-align: center;
-/*  margin-left: 2em;
-*/  background-color: #fff;
-  color: #F7931D;
-  border: 0.11em #F7931D solid;
-  display: inline-block;
-  width: 70%;
-  text-align: center;
-}
-
-.areas-learnMore:hover{
-  background-color: #F7931D;
-   color: #fff;
-
-}
-.centreElements{
-   margin-left: 10%;
-   margin-top: 2%;
-   width: 100%;
-}
-.hireMeButton{
-  position: relative;
-  top: 5em;
-  color: #48AFC3 !important;
-  border: 0.11em #48AFC3 solid;
-}
-
-.hireMeButton:hover {
-  color: #fff !important;
-  background-color: #48AFC3;
-}
-
-.hireMeButton2{
-  position: relative;
-  top: 2em;
-  background-color: #F7931D;
-  color: white;
-  text-transform: uppercase;
-   border-radius: 0.5em;
-  padding:0.5em 3em;
-  text-decoration: none;
-}
-
-.hireMeButton2:hover {
-  color: #F7931D !important;
-  border: 0.11em #F7931D solid;
-  background-color: #fff;
-}
-
 .areas-flip-box-container:hover .areas-flip-box, .professionals-flip-box-container:hover .professionals-flip-box {
   transform: rotateY(180deg);
 }
@@ -416,63 +531,10 @@ nav a#pull {
     text-transform: uppercase;
 }
 
-.jobDes{
-    color: #8E8E8E; 
-    width: 80%;
-    margin:0 auto;
-}
+/* ------------------------------------------
+ LINES STYLING
+--------------------------------------------- */
 
-.ratings{
-/*  margin-top: 1.5em;*/
-  width: 45%;
-  margin-left: 12%;
- /* margin:0 auto;*/
-}
-
-#professionals a {
-	text-decoration: none;
-	text-align: center;
- 	text-transform: uppercase;
- 	color: #8E8E8E;
-}
-
-#professionals h2{
-  padding-top: 5%;
-} 
-
-#hireTalent {
-    border-bottom:  0.01em dotted #48AFC3;
-    padding-bottom: 3em;
-    width: 100%
-}
-#hireTalent h2{
-    margin: 3% auto;
-    width: 35em;
-    padding: 1em;
-    border-bottom: none;
-    border-top: 0.01em dotted #48AFC3;
-    font-size: 1.8em;
-    font-weight: bolder;
-
-}
-#professionalsImages{
-  margin-left: 15%;
-  width: 100%;
-}
-#whyUs h2 {
-  padding-top:7%;
-}
-
-
-
-#whyUs{
- 	color: #8E8E8E;
-}
-
-#whyUs h4{
-	text-transform: uppercase;
-		padding-top:1em;
-}
 .blueLine, .orangeLine {
 	width: 30%;
 }
@@ -504,53 +566,19 @@ nav a#pull {
 .blueLine figure, .orangeLine figure, .greenLine figure, .yellowLine figure{
 	text-align: center;
 }
-
-.whyUsReasons {
-  width: 90%;
-  margin-left: 15%;
-}
-
-.whyUsReasons img {
-	padding-top: 1em;
-}
-
-#hireTalent h2{
-	text-align: center;
-	text-transform: uppercase;
-  margin-bottom: 1em;
-  color: #166877;
-}
-
-#hireTalent{
-  text-align: center;
-  background-color-color: #fff;
-
-}
-
-.getStarted{
-	text-align: center;
-  text-decoration: none;
-  padding: 1em;
-  width: 10em;
-  color: #fff;
-}
-
-.getStartedButton {
-  margin-top: 1em;
-  z-index: 999;
+/* ------------------------------------------
+ MISC STYLING
+--------------------------------------------- */
+.centreElements{
+   margin-left: 10%;
+   margin-top: 2%;
+   width: 100%;
 }
 
 
-.rightButton {
-  float: left;
-  margin-left: 65%;
-}
-
-.centreButton {
-  float: left;
-  margin-left: 43%;
-}
-
+/* ------------------------------------------
+ FOOTER
+--------------------------------------------- */
 
 footer {
   background-color: #166877;
@@ -561,6 +589,9 @@ footer {
   clear:both;
 }
 
+/* ------------------------------------------
+ FOOTER NAVIAGATION
+--------------------------------------------- */
 #secondaryNav{
   list-style-type: none;
   line-height: 1.4em;
@@ -589,10 +620,9 @@ footer {
   font-size: 0.7em;
 }
 
-/**************
-POP UP
-**************/
-
+/* ------------------------------------------
+SIGN UP POP UP
+--------------------------------------------- */
 .overlay {
   position: fixed;
   top: 0;
@@ -690,9 +720,9 @@ POP UP
 }
 
 
-/**************
-SEARCH BAR
-**************/
+/* ------------------------------------------
+ SEARCH BAR
+--------------------------------------------- */
 input{
   margin-top: 15%;
 }
@@ -721,9 +751,9 @@ input[type=search]:focus{
   box-shadow:0 0 5px rgba(109,207,246,.5);
 }
 
-/*******************
-Profile Page
-********************/
+/* ------------------------------------------
+ PROFILE PAGE STYLING
+--------------------------------------------- */
 
 #profileMainArea{
 margin-top: 10%;
@@ -734,8 +764,6 @@ margin-left: 2%;
   margin-top: 5%;
   margin-left: 2%;
   margin-right: 2%;
-
-
 }
 
 #profileMainArea p{
@@ -803,9 +831,9 @@ margin-left: 2%;
 }
 
 
-/***********
-MOBILE
-************/
+/* ------------------------------------------
+ MOBILE RESPONSIVENESS
+--------------------------------------------- */
 
 /* SMARTPHONES */
 
