@@ -13,6 +13,8 @@
   clear: both;
 }
 
+
+
 .grid-col-1of1, .grid-col-1of2, .grid-col-1of3,.grid-col-1of4 {
    display: block;
 }
@@ -49,16 +51,17 @@
   margin-top: 1em;
 }
 
+.grid-col-3of4{
+  width: 20%;
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .grid-col-1of2,.grid-col-2of3, .grid-col-2of3,.grid-col-2of4,.grid-col-1of3 {
+  .grid-col-1of2,.grid-col-2of3, .grid-col-2of3,.grid-col-2of4,.grid-col-1of3,.grid-col-1of4 {
     width: 100%;
 
   }
 
-  .grid-col-1of4{
-    width: 45%;
-  }
+  
 }

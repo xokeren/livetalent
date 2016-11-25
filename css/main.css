@@ -1,17 +1,20 @@
 /** MAIN CSS FOR LIVETALENT.CA **/
+  * {
+    margin: 0;
+}
 
 body, div,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
 fieldset, form, label, legend, th, td,
 article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
+summary, hgroup{
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
- max-width: 100%;
- max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
@@ -30,7 +33,8 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em;
   color: #555555;
-}
+    max-width: 100%;
+  }
 
 h1,h2 {
 	font-family: 'Open Sans', sans-serif;
@@ -41,11 +45,12 @@ h2{
 	margin: 0.5em 0 1em 1em;
 }
 
+
 .slogan, #steps{
 	color: #fff;
 	margin-left: 10%;
 	float: right;
-	background: rgb(247,147,29);
+	background-color: rgb(247,147,29);
 }
 
 .slogan, .stepsTitle {
@@ -63,6 +68,7 @@ h2{
 #steps{
 	margin-top: 1%;
 	margin-bottom: 2%;
+  padding-bottom: 2%;
 	width:53%;
 	border-radius: 0.5em;
 }
@@ -77,11 +83,6 @@ h2{
 
 }
 
-.stepsImages li{
-	width:30%;
-	display: inline-block;
-	margin-left: 1em;
-}
 
 .stepsImages h4{
   margin-top: 3%;
@@ -95,6 +96,7 @@ h2{
 }
 
 
+
 /* ------------------------------------------
   FIXED HEADER
 --------------------------------------------- */
@@ -104,7 +106,7 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-  background:#fff;
+  background-color:#fff;
   border-bottom: .1em #B2B2B2 solid;
 }
 
@@ -162,17 +164,7 @@ header {
   user-select: none;
 }
 
-@media screen and (min-width: 40em) {
-  .js .nav-collapse {
-    position: relative;
-  }
-  .js .nav-collapse.closed {
-    max-height: none;
-  }
-  .nav-toggle {
-    display: none;
-  }
-}
+
 
 /* ------------------------------------------
   MASK
@@ -182,7 +174,7 @@ header {
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
   transition: opacity 300ms;
-  background: rgba(0,0,0, .5);
+ background-color: rgba(0,0,0, .5);
   visibility: hidden;
   position: fixed;
   opacity: 0;
@@ -359,7 +351,7 @@ nav{
 
 .signUp, .getStarted{
 	margin-top:1em;
-   background: #48AFC3;
+  background-color: #48AFC3;
   border-radius: 0.5em;
   color: #fff;
 }
@@ -372,7 +364,7 @@ nav{
 }
 
 .signUp a:hover , .getStarted:hover{
-  background: #8E8E8E;
+ background-color: #8E8E8E;
   border-radius: 0.5em;
   color: #fff;
 }
@@ -394,29 +386,15 @@ nav{
 	z-index: 999;
 }
 #areas, #professionals, #whyUs, #hireTalent ,#mainArea{
-	background: #fff;
+	background-color: #fff;
 	width: 100%;
 	float: left;
 }
 
-#areas{
-	margin-top: 2%;
-}
 
 #areas h2
 {
   padding-top: 4%;
-}
-
-#areas ul, #professionals ul{
-	text-align: center;
-	vertical-align: middle;
-}
-
-#areas li, #professionalsImages li, #whyUs li{
-	width: 20%;
-  height: auto;
-	display: inline-block;
 }
 
 
@@ -445,6 +423,7 @@ nav{
   border-radius: 0.5em;
   padding: 3em 1em 3em 1em;
   display: flex;
+  margin-bottom: 4%;
 }
 .professionals-flip-box {
   height:18.5em;
@@ -524,7 +503,7 @@ nav{
   margin-top:0.3em;
   text-align: center;
 /*  margin-left: 2em;
-*/  background: #fff;
+*/  background-color: #fff;
   color: #F7931D;
   border: 0.11em #F7931D solid;
   display: inline-block;
@@ -533,11 +512,15 @@ nav{
 }
 
 .areas-learnMore:hover{
-  background: #F7931D;
+  background-color: #F7931D;
    color: #fff;
 
 }
-
+.centreElements{
+   margin-left: 10%;
+   margin-top: 2%;
+   width: 100%;
+}
 .hireMeButton{
   position: relative;
   top: 5em;
@@ -547,13 +530,13 @@ nav{
 
 .hireMeButton:hover {
   color: #fff !important;
-  background: #48AFC3;
+  background-color: #48AFC3;
 }
 
 .hireMeButton2{
   position: relative;
   top: 2em;
-  background: #F7931D;
+  background-color: #F7931D;
   color: white;
   text-transform: uppercase;
    border-radius: 0.5em;
@@ -564,7 +547,7 @@ nav{
 .hireMeButton2:hover {
   color: #F7931D !important;
   border: 0.11em #F7931D solid;
-  background: #fff;
+  background-color: #fff;
 }
 
 .areas-flip-box-container:hover .areas-flip-box, .professionals-flip-box-container:hover .professionals-flip-box {
@@ -575,9 +558,8 @@ nav{
   transform: rotateY(180deg);
 }
 .professionals-des-ratings {
-    position: relative;
-    top:2em;
-    right: 2em;
+/*    position: relative;
+*/    margin-top:10%;
     text-transform: uppercase;
 }
 
@@ -585,13 +567,13 @@ nav{
     color: #8E8E8E; 
     width: 80%;
     margin:0 auto;
-
 }
 
 .ratings{
 /*  margin-top: 1.5em;*/
   width: 45%;
-  margin:0 auto;
+  margin-left: 12%;
+ /* margin:0 auto;*/
 }
 
 #professionals a {
@@ -604,15 +586,15 @@ nav{
 #professionals h2, #hireTalent h2{
   padding-top: 5%;
 } 
-
+#professionalsImages{
+  margin-left: 15%;
+  width: 100%;
+}
 #whyUs h2 {
   padding-top:7%;
 }
 
-#whyUs ul{
-	margin-left: 15%;
-	list-style-type: none;
-}
+
 
 #whyUs{
  	color: #8E8E8E;
@@ -622,7 +604,7 @@ nav{
 	text-transform: uppercase;
 		padding-top:1em;
 }
-.blueLine, .greenLine, .orangeLine, .yellowLine {
+.blueLine, .orangeLine {
 	width: 30%;
 }
 
@@ -630,7 +612,7 @@ nav{
 	border-top: 0.5em #F7931D solid;
 }
 
-.lightBlueLine{
+.orangeLine{
 	border-top: 0.5em #48AFC3 solid;
 }
 
@@ -654,6 +636,11 @@ nav{
 	text-align: center;
 }
 
+.whyUsReasons {
+  width: 90%;
+  margin-left: 15%;
+}
+
 .whyUsReasons img {
 	padding-top: 1em;
 }
@@ -666,7 +653,7 @@ nav{
 
 #hireTalent{
   text-align: center;
-  background-color: #fff;
+  background-color-color: #fff;
 
 }
 
@@ -745,7 +732,7 @@ POP UP
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
@@ -759,7 +746,7 @@ POP UP
 .popup {
   margin: 4em auto;
   padding: 1.25em;
-  background: #fff;
+  background-color: #fff;
   border-radius: 0.5em;
   width: 30%;
   position: relative;
@@ -816,22 +803,22 @@ POP UP
 }
 
 .businessButton{
-  background: #F7931D;
+  background-color: #F7931D;
 }
 
 .businessButton:hover{
   border: 0.11em #F7931D solid;
-  background: #fff;
+  background-color: #fff;
   color: #F7931D;
 }
 
 .freelancerButton {
-  background: #48AFC3;
+  background-color: #48AFC3;
 }
 
 .freelancerButton:hover{
   border: 0.11em #48AFC3 solid;
-  background: #fff;
+  background-color: #fff;
   color: #48AFC3;
 }
 
@@ -950,3 +937,69 @@ margin-left: 2%;
     border: 0.2em #48AFC3 solid;
   border-radius: 0.5em;
 }
+
+
+/***********
+MOBILE
+************/
+
+/* SMARTPHONES */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+#intro{
+  margin-top: 45%;
+}
+
+.slogan {
+  font-size: 1.5em;
+} 
+#steps, .slogan {
+  width: 100%;
+ margin-left: 1.3%;
+  background-color: rgba(247,147,29,.6);
+}
+
+.stepsImages{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.getStartedButton{
+  float: left;
+}
+
+.areas-flip-box {
+  width: 80%;
+}
+
+.blueLine, .lightBlueLine{
+  margin-top: 2%;
+  width: 60%;
+}
+
+
+.popup {
+  width: 90%;
+  float: left;
+}
+.popup .content{
+  text-align: center;
+}
+
+.whyUsReasons{
+  width: 80%;
+}
+
+}
+
+
+/* TABLETS */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+/* Styles */
+
+}
+
+
