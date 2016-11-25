@@ -936,7 +936,7 @@ h2{
   }
   nav a#pull:after {
     content:"";
-    background: url('../img/nav-icon.png') no-repeat;
+    background: url('../img/finalIcons/navIcon.png') no-repeat;
     width: 1.8em;
     height: 1.8em;
     display: inline-block;
