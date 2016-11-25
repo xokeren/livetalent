@@ -6,6 +6,7 @@
 
 		<title>Livetalent</title>
 
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/grid.css" rel="stylesheet">
 
@@ -17,7 +18,27 @@
       <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
 
-		<script src="js/responsive-nav.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
 
 	</head>
 
@@ -25,12 +46,13 @@
 	<div class="page-wrap">
 		 <header>
 		     <a href="#" class="logo" data-scroll><img src="img/logo.png" alt="Livetalent Logo"></a>
-		    <form><input type="text" name="search" placeholder="Search.."></form> 
-		     <nav class="nav-collapse">
-		        <ul>
-		          	<li class="menu-item button"><a href="#" data-scroll>Log In</a></li>
-		          	<li class="menu-item button signUp"><a href="#popup-container" data-scroll>Sign Up</a></li>
+		     <nav class="clearfix">
+		        <ul class="clearfix">
+		        	<li><form><input type="search" placeholder="Search"></form></li>
+		          	<li class="button"><a href="#" data-scroll>Log In</a></li>
+		          	<li class="signUp"><a href="#popup-container" data-scroll>Sign Up</a></li>
 		        </ul>
+		        <a href="#" id="pull">Menu</a>
 	      	</nav>
     </header>
 
