@@ -80,7 +80,7 @@ h2{
 /*	width:47%;*/
 	border-radius: 0.5em;
   border: rgb(63,133,198) solid 0.2em;
-  padding: 0.5em 2em 0.5em 2em;
+  padding: 0.5em 2em 0 2em;
 }
 
 .stepsTitle {
@@ -201,39 +201,46 @@ nav a#pull {
   color: #555;
 }
 
-.signUp, .signUp:visited{
+.signUp, .signUp:visited, .getStarted2, .getStarted2:visited{
   border:#B2B2B2 solid 0.125em;
   text-align: center;
   padding: 0.5em 2em;
-  color:#166877 !important;
+  color:#48AFC3 !important;
   border-radius: 0.5em;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
-.signUp:hover, .signUp:active{
+.signUp:hover, .signUp:active, .getStarted2:hover, .getStarted2:active{
    border:#166877 solid 0.125em;
+   color:#166877 !important;
 }
 
 .getStarted, .getStarted:visited {
-    padding: 0.5em 3em;
+    padding: 0.5em 4em;
     text-decoration: none;
     background-color: #166877;
     color: #fff;
     border-radius: 0.5em;
+    margin-bottom: 2em;
 }
 .getStarted:hover, .getStarted:active {
   background-color: #1D8593;
 }
 
+
+
 .hireMeButton{
   position: relative;
   top: 5em;
   color: #48AFC3 !important;
-  border: 0.11em #48AFC3 solid;
+  border: 0.125em #48AFC3 solid;
 }
 
 .hireMeButton:hover {
-  color: #fff !important;
-  background-color: #48AFC3;
+  color: #166877 !important;
+  border: 0.125em #166877 solid;
+
 }
 
 .hireMeButton2{
@@ -322,15 +329,17 @@ nav a#pull {
 
 .jobDes{
     color: #8E8E8E; 
-    width: 80%;
+    width: 70%;
     margin:0 auto;
 }
 
 .ratings{
 /*  margin-top: 1.5em;*/
-  width: 45%;
-  margin-left: 12%;
- /* margin:0 auto;*/
+  margin-left:8%;
+ list-style-type: none;
+}
+.ratings li{
+ display: inline-block;
 }
 
 #professionals a {
@@ -509,9 +518,6 @@ nav a#pull {
  LINES STYLING
 --------------------------------------------- */
 
-.blueLine, .orangeLine {
-	width: 30%;
-}
 
 .blueLine{
 	border-top: 0.5em #3E85C6 solid;
@@ -663,33 +669,33 @@ SIGN UP POP UP
 .businessButton, .freelancerButton{
   text-decoration: none;
   padding: 0.5em;
-  color: #fff;
   border-radius: 0.5em;
   position: relative;
   top: 1em;
   display: inline-block;
   width: 8em;
   text-align: center;
+  font-weight: bolder;
 }
 
-.businessButton{
-  background-color: #F7931D;
+.businessButton, .businessButton:visited{
+  border:#F7931D solid 0.125em;
+  color:#F7931D;
 }
 
 .businessButton:hover{
-  border: 0.11em #F7931D solid;
-  background-color: #fff;
-  color: #F7931D;
+  border: 0.125em #C47526 solid;
+  color: #C47526;
 }
 
-.freelancerButton {
-  background-color: #48AFC3;
+.freelancerButton, .freelancerButton:visited {
+  border: 0.125em solid #48AFC3;
+  color:#48AFC3;
 }
 
 .freelancerButton:hover{
-  border: 0.11em #48AFC3 solid;
-  background-color: #fff;
-  color: #48AFC3;
+  border: 0.125em #166877 solid;
+  color: #166877;
 }
 
 
@@ -768,6 +774,7 @@ margin-left: 2%;
     position: fixed;
     font-weight: lighter;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 5em;
 }
 
 #profile-sidebar li{
@@ -834,6 +841,7 @@ margin-left: 2%;
  MOBILE RESPONSIVENESS
 --------------------------------------------- */
 
+
 /* SMARTPHONES */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -872,7 +880,7 @@ h2{
 
 .blueLine, .orangeLine{
   margin-top: 4%;
-  width: 60%;
+  width: 3em;
 }
 
 
