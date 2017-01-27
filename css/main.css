@@ -50,7 +50,6 @@ h2{
   font-weight: lighter;
   border-bottom: 0.01em dotted #48AFC3;
   width: 20em;
-  text-transform: uppercase;
 }
 
 /* ------------------------------------------
@@ -64,7 +63,6 @@ h2{
 }
 
 .slogan, .stepsTitle {
-	text-transform: uppercase;
 	padding: 0.5em 2em 0.5em 1em;
 }
 .slogan {
@@ -99,7 +97,6 @@ h2{
 .stepsImages h4{
   margin-top: 3%;
  /* text-align: center;*/
-  text-transform: uppercase;
   font-size: 0.9em;
 }
 
@@ -197,7 +194,6 @@ nav a#pull {
 .button{
 	margin: 1em;
   width: 3em;
-  text-transform: uppercase;
 }
 
 .button a:hover{
@@ -214,7 +210,6 @@ nav a#pull {
   background-color: #48AFC3;
   border-radius: 0.5em;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .signUp a, .getStarted {
@@ -246,7 +241,6 @@ nav a#pull {
   top: 2em;
   background-color: #fff;
   color: #F7931D;
-  text-transform: uppercase;
    border-radius: 0.5em;
   padding:0.5em 3em;
   text-decoration: none;
@@ -359,7 +353,6 @@ nav a#pull {
 #professionals a {
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
   color: #8E8E8E;
 }
 
@@ -396,7 +389,6 @@ nav a#pull {
 }
 
 #whyUs h4{
-  text-transform: uppercase;
     padding-top:1em;
 }
 
@@ -411,7 +403,6 @@ nav a#pull {
 
 #hireTalent h2{
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 1em;
   color: #166877;
 }
@@ -483,7 +474,6 @@ nav a#pull {
   content: '';
   display: block;
   clear: both;
-  text-transform: uppercase;
   margin:0 auto;
   color: #8E8E8E;
   width: 88%;
@@ -530,7 +520,6 @@ nav a#pull {
 .professionals-des-ratings {
 /*    position: relative;
 */    margin-top:10%;
-    text-transform: uppercase;
 }
 
 /* ------------------------------------------
@@ -611,7 +600,6 @@ footer {
 #secondaryNav a {
   text-decoration: none;
   color: #fff;
-  text-transform: uppercase;
   font-size: 0.8em;
 }
 
@@ -661,7 +649,6 @@ SIGN UP POP UP
 }
 
 .popup h2{
-  text-transform: uppercase;
   border-bottom: #B2B2B2 0.01em solid;
 }
 .popup .close {
@@ -699,7 +686,6 @@ SIGN UP POP UP
   border-radius: 0.5em;
   position: relative;
   top: 1em;
-  text-transform: uppercase;
   display: inline-block;
   width: 8em;
   text-align: center;
@@ -778,7 +764,6 @@ margin-left: 2%;
 
 .sectionTitle{
   color: #48AFC3;
-  text-transform: uppercase;
   border-bottom: #B2B2B2 0.1em dotted;
 }
 
@@ -793,7 +778,6 @@ margin-left: 2%;
 
 .personName{
   font-size: 3em;
-  text-transform: uppercase;
 }
 
 #profile-sidebar{
@@ -801,7 +785,6 @@ margin-left: 2%;
     padding-left: 1em;
     z-index: 999;
     position: fixed;
-    text-transform: uppercase;
     font-weight: lighter;
     font-family: 'Open Sans', sans-serif;
 }
