@@ -56,52 +56,63 @@ h2{
  INTRO STYLING
 --------------------------------------------- */
 .slogan, #steps{
-	color: #fff;
+	color: #555;
 	margin-left: 10%;
 	float: right;
-	background-color: rgb(247,147,29);
+	/*background-color: rgba(22,104,119,.5);*/
 }
 
 .slogan, .stepsTitle {
-	padding: 0.5em 2em 0.5em 1em;
+	
 }
 .slogan {
-	margin-top: 14%;
-	width:53%;
+	margin-top: 10%;
+	width:47%;
 	font-size: 2em;
 	text-align: center;
-	border-radius: 0.2em;
+  margin-right: 1.5em;
 }
 
 #steps{
-	margin-top: 1%;
+	margin-top: 2%;
 	margin-bottom: 2%;
-  padding-bottom: 2%;
-	width:53%;
+  margin-right: 2%;
+/*	width:47%;*/
 	border-radius: 0.5em;
+  border: rgb(63,133,198) solid 0.2em;
+  padding: 0.5em 2em 0.5em 2em;
 }
 
 .stepsTitle {
 		font-size: 1.2em;
-    border-bottom: 0.01em dotted #fff;
+    border-bottom: 0.01em dotted #555;
     width: 15em;
 }
 
 .stepsImages{
 	list-style-type: none;
-	padding: 3em 2em 3em 1em ;
+	padding: 2em 0 2em 0 ;
+}
 
+.stepsImages li {
+  display: inline-block;
+   margin-left: 4em;
+}
+
+.stepsImages li:first-child{
+     margin-left: 0;
 }
 
 
 .stepsImages h4{
   margin-top: 3%;
- /* text-align: center;*/
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .stepsImages figcaption{
 	margin-top: 1%;
+    margin-left: 0.5em;
+    font-size: 0.8em;
 }
 
 
@@ -136,7 +147,6 @@ header {
 .clearfix:before,
 .clearfix:after {
     content: " ";
-    display: table;
 }
 .clearfix:after {
     clear: both;
@@ -146,44 +156,31 @@ header {
 }
 
 nav {
-  height: 2.5em;
-  width: 100%;
   font-size: 1em;
   font-weight: bold;
-  position: relative;
+  margin-top: 1em;
 }
 nav ul {
-  padding: 0;
-  margin-left:55%;
-  width: 60%;
-  height: 2.5em;
+ float: right;
 }
 nav li {
-  display: inline;
-  float: left;
-  margin-left: 10%;
-}
-nav a {
-  color: #fff;
   display: inline-block;
-  width: 100px;
-  text-align: center;
+  margin-left: 3em;
+}
+nav li:last-child {
+ margin-right: 4.5em;
+
+}
+nav a,nav a:visited {
   text-decoration: none;
-  line-height: 40px;
-/*  text-shadow: 0.1em 0.1em 0px #B2B2B2;
-*/}
-nav li a {
-/*  border-right: 1px solid #576979;
-*/  box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
+  color:#B2B2B2;
 }
-nav li:last-child a {
-  border-right: 0;
+
+nav a:hover{
+    color:#166877;
 }
-/*nav a:hover, nav a:active {
-  background-color: #8c99a4;
-}*/
+
+
 nav a#pull {
   display: none;
 }
@@ -193,37 +190,40 @@ nav a#pull {
 --------------------------------------------- */
 .button{
 	margin: 1em;
-  width: 3em;
 }
 
 .button a:hover{
-	 color: #F7931D;
+	 color: #3E85C6;
 
 }
 
 .button a{
-  color: #8E8E8E;
+  color: #555;
 }
 
-.signUp, .getStarted{
-	margin-top:1em;
-  background-color: #48AFC3;
-  border-radius: 0.5em;
-  color: #fff;
-}
-
-.signUp a, .getStarted {
-  color: #fff;
-  width: 8em;
+.signUp, .signUp:visited{
+  border:#B2B2B2 solid 0.125em;
   text-align: center;
-
-}
-
-.signUp a:hover , .getStarted:hover{
- background-color: #8E8E8E;
+  padding: 0.5em 2em;
+  color:#166877 !important;
   border-radius: 0.5em;
-  color: #fff;
 }
+
+.signUp:hover, .signUp:active{
+   border:#166877 solid 0.125em;
+}
+
+.getStarted, .getStarted:visited {
+    padding: 0.5em 3em;
+    text-decoration: none;
+    background-color: #166877;
+    color: #fff;
+    border-radius: 0.5em;
+}
+.getStarted:hover, .getStarted:active {
+  background-color: #1D8593;
+}
+
 .hireMeButton{
   position: relative;
   top: 5em;
@@ -240,12 +240,12 @@ nav a#pull {
   position: relative;
   top: 2em;
   background-color: #fff;
-  color: #F7931D;
+  color: #166877;
    border-radius: 0.5em;
   padding:0.5em 3em;
   text-decoration: none;
   font-weight: bolder;
-  border: 0.11em #F7931D solid;
+  border: 0.11em #166877 solid;
 }
 
 .hireMeButton2:hover {
@@ -264,32 +264,15 @@ nav a#pull {
 .areas-learnMore{
   margin-top:0.3em;
   text-align: center;
-/*  margin-left: 2em;
-*/  background-color: #fff;
-  color: #F7931D;
-  border: 0.11em #F7931D solid;
+  color: #166877;
+  border: 0.125em #B2B2B2 solid;
   display: inline-block;
   width: 70%;
   text-align: center;
 }
 
 .areas-learnMore:hover{
-  background-color: #F7931D;
-   color: #fff;
-
-}
-
-.getStarted{
-  text-align: center;
-  text-decoration: none;
-  padding: 1em;
-  width: 10em;
-  color: #fff;
-}
-
-.getStartedButton {
-  margin-top: 1em;
-  z-index: 999;
+  border: 0.125em #166877 solid;
 }
 
 
@@ -437,7 +420,7 @@ nav a#pull {
 .areas-flip-box {
   height: 12em;
   width: 100%;
-  border: 0.2em #F7931D solid;
+  border: 0.2em #3E85C6 solid;
   border-radius: 0.5em;
   padding: 3em 1em 3em 1em;
   display: flex;
@@ -493,7 +476,7 @@ nav a#pull {
 }
 
 .professionals-back {
-  border: 0.1em #F7931D solid;
+  border: 0.1em #3E85C6 solid;
   border-radius: 0.5em;
   padding: 0.5em 1em 0.5em 1em;
   height: 20em;
@@ -531,7 +514,7 @@ nav a#pull {
 }
 
 .blueLine{
-	border-top: 0.5em #F7931D solid;
+	border-top: 0.5em #3E85C6 solid;
 }
 
 .orangeLine{
@@ -547,12 +530,10 @@ nav a#pull {
   margin-top: 0.5em;
   margin-left: 25%;
 }
-.blueLine h4{
-	color: #F7931D;
+.blueLine h4, .orangeLine h4{
+	color: #3E85C6;
 }
-.orangeLine h4{
-	color: #48AFC3;
-}
+
 
 .blueLine p ,.blueLine h4, .greenLine h4, .greenLine p, .yellowLine h4, .yellowLine p, .orangeLine h4, .orangeLine p{
 	text-align: left;
