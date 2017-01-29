@@ -19,40 +19,22 @@
     <![endif]-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-	</script>
-
 
 	</head>
 
 	<body id="landing-img">
 	<div class="page-wrap">
-		 <header>
+		 <header class="cd-main-header">
 		     <a href="#" class="logo" data-scroll><img src="img/logo.png" alt="Livetalent Logo"></a>
-		     <nav class="clearfix">
-		        <ul class="clearfix">
+		     <nav>
+		        <ul class="topnav" id="myTopnav">
 		        	<li><form><input type="search" placeholder="Search"></form></li>
 		          	<li><a href="#" data-scroll>Log In</a></li>
 		          	<li><a href="#popup-container" data-scroll class="signUp">Sign Up</a></li>
+		          	<li class="icon">
+   						 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+ 					</li>
 		        </ul>
-		        <a href="#" id="pull">Menu</a>
 	      	</nav>
     	</header>
 
@@ -372,7 +354,16 @@
 		</section>
 	</footer>
 
-
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
 	</body>
 </html>

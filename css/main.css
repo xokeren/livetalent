@@ -143,46 +143,53 @@ header {
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
-/* Clearfix */
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-nav {
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 1em;
-}
-nav ul {
- float: right;
-}
-nav li {
+ul.topnav li {float: right;
+padding: 2em;}
+
+ul.topnav li a {
   display: inline-block;
-  margin-left: 3em;
-}
-nav li:last-child {
- margin-right: 4.5em;
-
-}
-nav a,nav a:visited {
+  color: #B2B2B2;
+/*  text-align: center;
+*/  
   text-decoration: none;
-  color:#B2B2B2;
+  transition: 0.3s;
 }
 
-nav a:hover{
-    color:#F7931D;
+ul.topnav li a:hover {color:#F7931D;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: left;
+    display: inline-block;
+  }
 }
 
-
-nav a#pull {
-  display: none;
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 
 /* ------------------------------------------
@@ -898,73 +905,15 @@ h2{
   width: 80%;
   margin-left: 5%;
 }
- nav ul {
-    display: none;
-    height: auto;
-    text-align: center;
-  }
-
-  nav li{
-    margin-right: -10%;
-  }
-  nav a#pull {
-    display: block;
-    background-color: #166877;
-    width: 100%;
-  }
-  nav a#pull:after {
-    content:"";
-    background: url('../img/finalIcons/navIcon.png') no-repeat;
-    width: 1.8em;
-    height: 1.8em;
-    display: inline-block;
-    position: relative;
-    left: 0.5em;
-    top:1em;
-  }
-
 
 }
 
 
-/* TABLETS */
+
+
+
+/* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-/* Styles */
-
-}
-
-/*Styles for screen 600px and lower*/
-@media screen and (max-width: 600px) {
-  nav { 
-      height: auto;
-      float: right;
-    }
-    nav ul {
-      width: 80%;
-    /*  display: block;*/
-      height: auto;
-      margin-bottom: 1em;
-      margin-left: -5%;
-    }
-    nav li {
-      width: 50%;
-/*      float: left;
-*/      /*position: relative;*/
-    }
-    nav li a {
-    /*border-bottom: 1px solid #576979;
-    border-right: 1px solid #576979;*/
-  }
-    nav a {
-/*      width: 100%;*/
-      text-indent: 25px;
-    }
-    .logo{
-    margin-left: 3em;
-/*    margin-top: 3em;
-*/    z-index: 999;
-  }
 
   .signUp {
     width: 15em;
@@ -978,15 +927,4 @@ h2{
   input[type=search]:focus{
     width: 10em;
   }
-}
-
-
-/*Smartphone*/
-@media only screen and (max-width : 320px) {
-  nav li {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-
 }
