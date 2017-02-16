@@ -1,4 +1,4 @@
-/** MAIN CSS FOR LIVETALENT.CA **/
+﻿/** MAIN CSS FOR LIVETALENT.CA **/
 
 /* ------------------------------------------
  GENERAL STYLING
@@ -76,11 +76,11 @@ h2{
 #steps{
 	margin-top: 2%;
 	margin-bottom: 2%;
-  margin-right: 2%;
+  margin-right: 3%;
 /*	width:47%;*/
 	border-radius: 0.5em;
   border: rgb(63,133,198) solid 0.2em;
-  padding: 0.5em 2em 0 2em;
+  padding: 0.5em 1em 0 2em;
 }
 
 .stepsTitle {
@@ -96,23 +96,29 @@ h2{
 
 .stepsImages li {
   display: inline-block;
-   margin-left: 4em;
+/*   margin-left: 4em;*/
 }
 
 .stepsImages li:first-child{
      margin-left: 0;
 }
 
-
 .stepsImages h4{
   margin-top: 3%;
   font-size: 1em;
+  text-align: center;
+}
+
+.stepsImages img{
+  padding: 0 2.2em 0 2.2em;
 }
 
 .stepsImages figcaption{
 	margin-top: 1%;
     margin-left: 0.5em;
     font-size: 0.8em;
+    padding-bottom: 1em;
+    text-align: center;
 }
 
 
@@ -773,6 +779,10 @@ margin-left: 2%;
 .personName{
   font-size: 3em;
 }
+
+#sidebarNav li{
+  list-style-type: none;
+}
 /*
 #profile-sidebar{
    box-sizing: border-box;
@@ -866,16 +876,25 @@ h2{
 
 .slogan {
   font-size: 1.5em;
+  margin-left: 20%;
 } 
 #steps, .slogan {
-  width: 100%;b
+  width: 100%;
  margin-left: 1.3%;
-  background-color: rgba(247,147,29,.6);
+/*background-color: rgba(247,147,29,.6);*/
+}
+
+.stepsTitle{
+  text-align: center;
 }
 
 .stepsImages{
   text-align: center;
   margin-bottom: 4%;
+}
+
+.stepsImages figcaption{
+  margin-bottom: 2%;
 }
 
 .button{
