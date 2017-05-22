@@ -38,6 +38,7 @@ body {
 	font-size: 1em;
   color: #555555;
     max-width: 100%;
+    overflow-x: hidden;
   }
 
 h1,h2 {
@@ -66,42 +67,20 @@ h2{
 	
 }
 .slogan {
-	margin-top: 10%;
-	width:47%;
-	font-size: 2em;
+	font-size: 3em;
 	text-align: center;
-  margin-right: 1.5em;
 }
 
 #steps{
-	margin-top: 2%;
-	margin-bottom: 2%;
-  margin-right: 3%;
-/*	width:47%;*/
 	border-radius: 0.5em;
   border: rgb(63,133,198) solid 0.2em;
-  padding: 0.5em 1em 0 2em;
 }
 
 .stepsTitle {
-		font-size: 1.2em;
+		font-size: 1.5em;
     border-bottom: 0.01em dotted #555;
-    width: 15em;
 }
 
-.stepsImages{
-	list-style-type: none;
-	padding: 2em 0 2em 0 ;
-}
-
-.stepsImages li {
-  display: inline-block;
-/*   margin-left: 4em;*/
-}
-
-.stepsImages li:first-child{
-     margin-left: 0;
-}
 
 .stepsImages h4{
   margin-top: 3%;
@@ -121,6 +100,55 @@ h2{
     text-align: center;
 }
 
+@media only screen and (min-width: 1170px) {
+.slogan, #steps{
+  color: #555;
+  margin-left: 10%;
+  float: right;
+  /*background-color: rgba(22,104,119,.5);*/
+}
+
+.slogan, .stepsTitle {
+  
+}
+.slogan {
+  margin-top: 10%;
+  width:65%;
+  font-size: 3em;
+  text-align: center;
+  margin-right: 1.5em;
+}
+
+#steps{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 3%;
+  width:65%;
+}
+
+.stepsTitle {
+    width: 80%;
+}
+
+.stepsImages{
+  padding: 2em 0 2em 0 ;
+}
+
+
+.stepsImages h4{
+  margin-top: 3%;
+}
+
+.stepsImages img{
+  padding: 0 2.2em 0 2.2em;
+}
+
+.stepsImages figcaption{
+  margin-top: 1%;
+    margin-left: 0.5em;
+}
+
+}
 
 
 /* ------------------------------------------
@@ -298,7 +326,7 @@ ul.topnav li.icon {display: none;}
 
 .rightButton {
   float: left;
-  margin-left: 65%;
+  margin-left: 55%;
 }
 
 .centreButton {
@@ -382,7 +410,7 @@ ul.topnav li.icon {display: none;}
 }
 
 #professionalsImages{
-  margin-left: 15%;
+  margin-left: 5%;
   width: 100%;
 }
 #whyUs h2 {
@@ -399,7 +427,7 @@ ul.topnav li.icon {display: none;}
 
 .whyUsReasons {
   width: 90%;
-  margin-left: 15%;
+  margin-left: 5%;
 }
 
 .whyUsReasons img {
@@ -422,9 +450,9 @@ ul.topnav li.icon {display: none;}
  TALENT AREA  AND PROFESSIONAL AREA FLIP BOX
 --------------------------------------------- */
 .areas-flip-box-container,.professionals-flip-box-container{
-	margin: 1% 0 0 1%;
-  perspective: 56em;
-  -webkit-perspective:56em; /* Chrome, Safari, Opera */
+/*	margin: 1% 0 0 1%;
+*/  perspective: 50em;
+  -webkit-perspective:50em; /* Chrome, Safari, Opera */
 }
 
 .areas-flip-box-container:after,.professionals-flip-box-container:after{
@@ -547,7 +575,7 @@ ul.topnav li.icon {display: none;}
 .blueLine figcaption,  .orangeLine figcaption{
   width: 70%;
   margin-top: 0.5em;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 .blueLine h4, .orangeLine h4{
 	color: #3E85C6;
@@ -779,10 +807,42 @@ margin-left: 2%;
 .personName{
   font-size: 3em;
 }
+/* ------------------------------------------
+SIDEBAR
+--------------------------------------------- */
 
+#sidebarNav{
+    position: fixed;
+    white-space: nowrap;
+/*  overflow: hidden;
+*/  left:50em;
+
+}
 #sidebarNav li{
   list-style-type: none;
+  margin-top: 0.5em;
+  
+ 
 }
+
+#sidebarNav a{
+  text-decoration: none; 
+   color:#166877;
+}
+
+#sidebarNav a:hover{
+  color:#48AFC3;
+}
+
+#sidebarNav li:before {
+    content:"·";
+    font-size:8em;
+   vertical-align:top;
+    line-height:0.0001em;
+       color:#166877;
+
+}
+
 /*
 #profile-sidebar{
    box-sizing: border-box;
