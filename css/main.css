@@ -50,7 +50,9 @@ h2{
 	margin: 0.5em 0 1em 1em;
   font-weight: lighter;
   border-bottom: 0.01em dotted #48AFC3;
-  width: 20em;
+  width: 35em;
+    font-size: 1.2em;
+
 }
 
 /* ------------------------------------------
@@ -77,25 +79,24 @@ h2{
 }
 
 .stepsTitle {
-		font-size: 1.5em;
+		font-size: 1.8em;
     border-bottom: 0.01em dotted #555;
 }
 
 
 .stepsImages h4{
   margin-top: 3%;
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: center;
 }
 
 .stepsImages img{
-  padding: 0 2.2em 0 2.2em;
 }
 
 .stepsImages figcaption{
 	margin-top: 1%;
     margin-left: 0.5em;
-    font-size: 0.8em;
+    font-size: 1em;
     padding-bottom: 1em;
     text-align: center;
 }
@@ -121,13 +122,15 @@ h2{
 
 #steps{
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   margin-right: 3%;
   width:65%;
 }
 
 .stepsTitle {
-    width: 80%;
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 .stepsImages{
@@ -140,7 +143,7 @@ h2{
 }
 
 .stepsImages img{
-  padding: 0 2.2em 0 2.2em;
+  padding: 0 5em 0 5em;
 }
 
 .stepsImages figcaption{
@@ -678,6 +681,7 @@ SIGN UP POP UP
 
 .popup h2{
   border-bottom: #B2B2B2 0.01em solid;
+  width:90%;
 }
 .popup .close {
   position: absolute;
@@ -784,6 +788,7 @@ margin-left: 2%;
   margin-top: 3%;
   margin-left: 2%;
   margin-right: 2%;
+  width: 100%;
 }
 
 #profileMainArea p{
@@ -927,7 +932,6 @@ SIDEBAR
 
 
 h2{
-  width: 10em;
   text-align: center;
 }
 #intro{
@@ -963,7 +967,7 @@ h2{
 }
 
 .areas-flip-box {
-  width: 80%;
+  width: 70%;
 }
 
 .blueLine, .orangeLine{
