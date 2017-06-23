@@ -60,9 +60,7 @@ h2{
 --------------------------------------------- */
 .slogan, #steps{
 	color: #555;
-	margin-left: 10%;
 	float: right;
-	/*background-color: rgba(22,104,119,.5);*/
 }
 
 .slogan, .stepsTitle {
@@ -71,16 +69,22 @@ h2{
 .slogan {
 	font-size: 3em;
 	text-align: center;
+  margin-bottom: 1em;
+  /*background-color: rgba(22,104,119,.5);*/
+  width: 95%;
 }
 
 #steps{
 	border-radius: 0.5em;
   border: rgb(63,133,198) solid 0.2em;
+  width: 90%;
+  margin-right: 5%;
 }
 
 .stepsTitle {
 		font-size: 1.8em;
     border-bottom: 0.01em dotted #555;
+    margin:1em;
 }
 
 
@@ -91,6 +95,8 @@ h2{
 }
 
 .stepsImages img{
+  float: left;
+  margin-left: 10%;
 }
 
 .stepsImages figcaption{
@@ -104,7 +110,6 @@ h2{
 @media only screen and (min-width: 1170px) {
 .slogan, #steps{
   color: #555;
-  margin-left: 10%;
   float: right;
   /*background-color: rgba(22,104,119,.5);*/
 }
@@ -115,9 +120,11 @@ h2{
 .slogan {
   margin-top: 10%;
   width:65%;
-  font-size: 3em;
-  text-align: center;
   margin-right: 1.5em;
+  margin-left: 10%;
+    margin-bottom: 0em;
+
+
 }
 
 #steps{
@@ -170,12 +177,18 @@ header {
 .logo {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
-  font-weight: bold;
   line-height: 3.4em;
+ }
+
+
+@media only screen and (min-width: 1170px) {
+
+.logo {
   float: left;
   margin-left: 0.5em;
 }
 
+}
 
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
@@ -204,41 +217,16 @@ ul.topnav li a:hover {color:#F7931D;}
 
 ul.topnav li.icon {display: none;}
 
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: left;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
 
 /* ------------------------------------------
   BUTTONS STYLING
 --------------------------------------------- */
 .button{
-	margin: 1em;
+
 }
 
 .button a:hover{
 	 color: #3E85C6;
-
 }
 
 .button a{
@@ -248,11 +236,11 @@ ul.topnav li.icon {display: none;}
 .signUp, .signUp:visited, .getStarted2, .getStarted2:visited{
   border:#B2B2B2 solid 0.125em;
   text-align: center;
-  padding: 0.5em 2em;
   color:#F7931D !important;
   border-radius: 0.5em;
   text-decoration: none;
   font-weight: bolder;
+  padding: 0.5em 2em;
 }
 
 .signUp:hover, .signUp:active, .getStarted2:hover, .getStarted2:active{
@@ -261,22 +249,24 @@ ul.topnav li.icon {display: none;}
 }
 
 .getStarted, .getStarted:visited {
-    padding: 0.5em 4em;
     text-decoration: none;
     background-color: #F7931D;
     color: #fff;
     border-radius: 0.5em;
-    margin-bottom: 2em;
+    padding: 2em 4em;
+    margin-top: 1em;
+    float: left;
+    margin-left: 25%;
+    margin-bottom: 1em;
 }
+
 .getStarted:hover, .getStarted:active {
   background-color: #C47526;
 }
 
 
-
 .hireMeButton{
   position: relative;
-  top: 5em;
   color: #48AFC3 !important;
   border: 0.125em #48AFC3 solid;
 }
@@ -289,11 +279,9 @@ ul.topnav li.icon {display: none;}
 
 .hireMeButton2{
   position: relative;
-  top: 2em;
   background-color: #fff;
   color: #166877;
    border-radius: 0.5em;
-  padding:0.5em 3em;
   text-decoration: none;
   font-weight: bolder;
   border: 0.11em #166877 solid;
@@ -308,18 +296,14 @@ ul.topnav li.icon {display: none;}
 
 .areas-learnMore, .hireMeButton{
   border-radius: 0.5em;
-  padding:0.5em 1em;
   text-decoration: none;
 }
 
 .areas-learnMore{
-  margin-top:0.3em;
   text-align: center;
   color: #166877;
   border: 0.125em #B2B2B2 solid;
   display: inline-block;
-  width: 70%;
-  text-align: center;
 }
 
 .areas-learnMore:hover{
@@ -329,14 +313,65 @@ ul.topnav li.icon {display: none;}
 
 .rightButton {
   float: left;
-  margin-left: 55%;
+  
 }
 
 .centreButton {
   float: left;
+}
+
+
+@media only screen and (min-width: 1170px) {
+
+.button{
+  margin: 1em;
+}
+
+
+
+.button a{
+  color: #555;
+}
+
+.signUp, .signUp:visited, .getStarted2, .getStarted2:visited{
+  
+}
+
+
+.getStarted, .getStarted:visited {
+    padding: 0.5em 4em;
+    margin-bottom: 2em;
+}
+
+.hireMeButton{
+  top: 5em;
+}
+
+
+.hireMeButton2{
+  top: 2em;
+  padding:0.5em 3em;
+}
+
+.areas-learnMore, .hireMeButton{
+  padding:0.5em 1em;
+}
+
+.areas-learnMore{
+  margin-top:0.3em;
+  width: 70%;
+}
+
+.rightButton {
+  margin-left: 55%;
+}
+
+.centreButton {
   margin-left: 43%;
 }
 
+
+}
 /* ------------------------------------------
   BACKGROUND IMAGES
 --------------------------------------------- */
@@ -359,29 +394,23 @@ ul.topnav li.icon {display: none;}
 
 #intro{
 	z-index: 999;
+    margin-top: 60%;
 }
 #areas, #professionals, #whyUs, #hireTalent ,#mainArea{
 	background-color: #fff;
-	width: 100%;
 	float: left;
 }
 
-#areas h2
-{
-  padding-top: 4%;
-}
 
 .jobDes{
     color: #8E8E8E; 
-    width: 70%;
-    margin:0 auto;
 }
 
 .ratings{
 /*  margin-top: 1.5em;*/
-  margin-left:8%;
  list-style-type: none;
 }
+
 .ratings li{
  display: inline-block;
 }
@@ -393,7 +422,6 @@ ul.topnav li.icon {display: none;}
 }
 
 #professionals h2{
-  padding-top: 5%;
 } 
 
 #hireTalent {
@@ -413,6 +441,85 @@ ul.topnav li.icon {display: none;}
 }
 
 #professionalsImages{
+  
+}
+#whyUs h2 {
+}
+
+#whyUs{
+  color: #8E8E8E;
+}
+
+#whyUs h4{
+   
+}
+
+.whyUsReasons {
+  
+}
+
+.whyUsReasons img {
+  
+}
+
+#hireTalent h2{
+  text-align: center;
+  color: #166877;
+}
+
+#hireTalent{
+  text-align: center;
+  background-color-color: #fff;
+
+}
+
+@media only screen and (min-width: 1170px) {
+
+#intro{
+   margin-top: 0%;
+}
+#areas, #professionals, #whyUs, #hireTalent ,#mainArea{
+  width: 100%;
+
+}
+
+#areas h2
+{
+  padding-top: 4%;
+}
+
+.jobDes{ 
+    width: 70%;
+    margin:0 auto;
+}
+
+.ratings{
+/*  margin-top: 1.5em;*/
+  margin-left:8%;
+
+}
+
+.ratings li{
+ display: inline-block;
+}
+
+
+#professionals h2{
+  padding-top: 5%;
+} 
+
+#hireTalent {
+    padding-bottom: 3em;
+    width: 100%
+}
+
+#hireTalent h2{
+    margin: 3% auto;
+    width: 35em;
+    padding: 1em; 
+}
+
+#professionalsImages{
   margin-left: 5%;
   width: 100%;
 }
@@ -420,9 +527,6 @@ ul.topnav li.icon {display: none;}
   padding-top:7%;
 }
 
-#whyUs{
-  color: #8E8E8E;
-}
 
 #whyUs h4{
     padding-top:1em;
@@ -438,14 +542,8 @@ ul.topnav li.icon {display: none;}
 }
 
 #hireTalent h2{
-  text-align: center;
   margin-bottom: 1em;
-  color: #166877;
 }
-
-#hireTalent{
-  text-align: center;
-  background-color-color: #fff;
 
 }
 
@@ -515,6 +613,8 @@ ul.topnav li.icon {display: none;}
   width: 88%;
   padding-top: 1em;
 }
+
+
 .areas-front figcaption{
   font-size: 1.1em;
   margin-top: .5em;
@@ -526,6 +626,8 @@ ul.topnav li.icon {display: none;}
   content: '';
   display: block;
   clear: both;
+    margin:0 auto;
+
 }
 
 .professionals-back {
@@ -924,106 +1026,3 @@ SIDEBAR
   border-radius: 0.5em;
 }
 
-
-/* ------------------------------------------
- MOBILE RESPONSIVENESS
---------------------------------------------- */
-
-
-/* SMARTPHONES */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-
-h2{
-  text-align: center;
-}
-#intro{
-  margin-top: 60%;
-}
-
-.slogan {
-  font-size: 1.5em;
-  margin-left: 20%;
-} 
-#steps, .slogan {
-  width: 100%;
- margin-left: 1.3%;
-/*background-color: rgba(247,147,29,.6);*/
-}
-
-.stepsTitle{
-  text-align: center;
-}
-
-.stepsImages{
-  text-align: center;
-  margin-bottom: 4%;
-}
-
-.stepsImages figcaption{
-  margin-bottom: 2%;
-}
-
-.button{
-  position: relative;
-  margin-left:  20%;
-}
-
-.areas-flip-box {
-  width: 70%;
-}
-
-.blueLine, .orangeLine{
-  margin-top: 4%;
-  width: 3em;
-}
-
-
-.popup {
-  width: 90%;
-  float: left;
-}
-.popup .content{
-  text-align: center;
-}
-
-.whyUsReasons{
-  width: 80%;
-  margin-left: 5%;
-}
-
-.icons{
- padding-bottom: 5%;
-}
-
-.nameHeader{
-  width: 100%;
-}
-
-.blueBorder{
-  border:none;
-}
-
-}
-
-
-
-
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-  .signUp {
-    width: 15em;
-    margin-left: 3em;
-  }
-
-  input[type=search] {
-    width: 10em;
-  }
-
-  input[type=search]:focus{
-    width: 10em;
-  }
-}
